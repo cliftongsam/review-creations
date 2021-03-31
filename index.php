@@ -35,7 +35,7 @@
 
     <h3> For login or as Guest</h3>
 
-    <a href="http://localhost:63342/IAR/homepage.php">
+    <a href="homepage.php">
         <button>HERE</button>
     </a>
 </body>
