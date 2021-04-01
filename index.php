@@ -35,6 +35,8 @@
 
     <h3> For login or as Guest</h3>
 
+    <b>This app is made by Jude</b>
+
     <a href="homepage.php">
         <button>HERE</button>
     </a>
