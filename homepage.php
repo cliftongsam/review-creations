@@ -33,7 +33,7 @@
     Password: <input type="password" name="password"><br><br>
     <input type="submit"><br><br>
 </form>
-<form action="Sign%20up.php" method="post">
+<form action="Sign up.php" method="post">
     Sign Up:<br><br>
     <input type="submit">
 
