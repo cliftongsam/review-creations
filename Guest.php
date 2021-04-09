@@ -10,7 +10,6 @@
 <?php
     $conn = mysqli_connect("localhost", "root", "mysql", "review");
     $val = mysqli_query($conn, "SELECT * FROM test");
-    var_dump($val->fetch_all());
 ?>
 
 <script src="http://maps.google.com/maps/api/js?sensor=false">
