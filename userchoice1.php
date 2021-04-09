@@ -1,12 +1,29 @@
-<!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body  bgcolor="white">
 <center>
-    <h1> "Where have you been?" </h1>
+    <h1> "What have you been?" </h1>
     <br>
     <br>
+
+
+
+    <style>
+        h1{
+            color: black;
+            font-size: 300%;
+            text-align: center;
+        }
+
+        h2{
+            color: black;
+            font-size: 200%;
+            text-align: center;
+        }
+
+    </style>
 
     <body>
     <div class="nav">
@@ -20,8 +37,6 @@
     </div>
 
 
-    </div>
     </body>
 </html>
-
 
