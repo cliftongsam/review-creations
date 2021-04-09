@@ -7,14 +7,30 @@ include("auth_session.php");
 <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <div class="form">
     <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
     <p>You are now at the user dashboard page.</p>
 
-    <h1> WELCOME TO REVIEW CREATIONS</h1>
+    <h1>WELCOME TO REVIEW CREATIONS</h1><br><br>
+    <h2> What would you like to do today?</h2><br><br>
+    <a href="userchoice2.php">
+        <div style="text-align: center;"><button>HERE</button></div><br><br>
+    </a>
+    <h2> Where have you been?</h2><br><br>
+    <a href="userchoice1.php">
+        <div style="text-align: center;"><button>HERE</button></div>
+    </a>
+
     <p><a href="logout.php">Logout</a></p>
 </div>
 </body>

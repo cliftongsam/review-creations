@@ -28,10 +28,10 @@
 <h1>HOMEPAGE</h1>
 <h2> LOG IN</h2>
 
-<form action="login.php" method="post">
+<form action="Login.php" method="post">
     <input type="submit"><br><br>
 </form>
-<form action="Sign up.php" method="post">
+<form action="Sign%20up.php" method="post">
     Sign Up:<br><br>
     <input type="submit">
 
