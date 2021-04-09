@@ -24,15 +24,15 @@
 
     </style>
 
-<body>
+<body >
 <h1>HOMEPAGE</h1>
-<h2> LOG IN</h2>
+<h2 style=": white"> LOG IN</h2>
 
 <form action="login.php" method="post">
     <input type="submit"><br><br>
 </form>
 <form action="Sign up.php" method="post">
-    Sign Up:<br><br>
+    <h3>SIGN-UP:</h3>
     <input type="submit">
 
 </form>
