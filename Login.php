@@ -1,5 +1,9 @@
 <html>
-    <head>
+    <title> Login for RC</title>
+    <body>
+        <form action="" method="post">
 
-    </head>
+
+        </form>
+    </body>
 </html>
