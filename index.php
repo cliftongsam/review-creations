@@ -1,5 +1,6 @@
 <html>
 <head>
+    <link rel="stylesheet" href="styles/style.css"/>
     <style>
     h1 {
         color:darkblue;
