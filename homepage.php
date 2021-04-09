@@ -25,7 +25,7 @@
 
     <body>
 <h1>HOMEPAGE</h1>
-<h2>SIGN UP / LOG IN</h2>
+<h2> LOG IN</h2>
 
 <form action="login.php" method="post">
     E-mail: <input type="text" name="email"><br>
