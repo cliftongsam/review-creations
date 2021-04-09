@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles/style.css"/>
+</head>
     <style>
         h1{
             color: black;
@@ -23,29 +24,27 @@
 
     </style>
 
-    <body>
-<h1>HOMEPAGE</h1>
-<h2> LOG IN</h2>
+<body>
+    <h1>HOMEPAGE</h1>
+    <h2> LOG IN</h2>
 
-<form action="login.php" method="post">
+    <form action="login.php" method="post">
     E-mail: <input type="text" name="email"><br>
     Password: <input type="password" name="password"><br><br>
     <input type="submit"><br><br>
-</form>
-<form action="Sign up.php" method="post">
+    </form>
+    <form action="Sign up.php" method="post">
     Sign Up:<br><br>
-    <input type="submit" name="sign">
+    <a href=""
+    </form>
 
-</form>
+    <h2 style=>GUEST</h2>
 
-<h2 style=>GUEST</h2>
-
-<form action="Guest.php" method="post">
+    <form action="Guest.php" method="post">
     Name: <input type="Text" name="name"><br><br>
     <input type="submit">
-</form>
-</body>
-</head>
+    </form>
+    </body>
 </html>
 
 
