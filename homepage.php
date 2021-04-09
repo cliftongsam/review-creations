@@ -25,26 +25,28 @@
     </style>
 
 <body>
-    <h1>HOMEPAGE</h1>
-    <h2> LOG IN</h2>
+<h1>HOMEPAGE</h1>
+<h2> LOG IN</h2>
 
-    <form action="login.php" method="post">
+<form action="login.php" method="post">
     E-mail: <input type="text" name="email"><br>
     Password: <input type="password" name="password"><br><br>
     <input type="submit"><br><br>
-    </form>
-    <form action="Sign up.php" method="post">
+</form>
+<form action="Sign%20up.php" method="post">
     Sign Up:<br><br>
-    <a href=""
-    </form>
+    <input type="submit">
 
-    <h2 style=>GUEST</h2>
+</form>
 
-    <form action="Guest.php" method="post">
+<h2 style=>GUEST</h2>
+
+<form action="Guest.php" method="post">
     Name: <input type="Text" name="name"><br><br>
     <input type="submit">
-    </form>
-    </body>
+</form>
+</body>
 </html>
+
 
 
