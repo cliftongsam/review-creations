@@ -29,8 +29,6 @@
 <h2> LOG IN</h2>
 
 <form action="login.php" method="post">
-    E-mail: <input type="text" name="email"><br>
-    Password: <input type="password" name="password"><br><br>
     <input type="submit"><br><br>
 </form>
 <form action="Sign up.php" method="post">
