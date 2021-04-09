@@ -3,6 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles/style.css"/>
+</head>
 <style>
     body {font-family: Arial, Helvetica, sans-serif;}
     * {box-sizing: border-box;}
@@ -114,7 +115,6 @@
         }
     }
 </style>
-<head>
 <h1>Sign Up</h1>
 <p>Please fill in this form to create an account.</p>
 <hr>
@@ -152,6 +152,5 @@
         }
     }
 </script>
-</head>
 </body>
 </html>
