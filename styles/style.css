@@ -1,4 +1,25 @@
 body {
     font-family: "Adobe Gothic Std B";
+    margin: 0;
+}
 
+header {
+    margin: 0;
+    position: sticky;
+}
+
+header > h1 {
+    font-family: sans-serif;
+    color: black;
+    font-size: 2rem;
+}
+
+button, input[type="submit"] {
+    background: rgba(255, 0, 255, 0.2);
+    color: rgb(255, 0, 255);
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    padding: 1em;
+    font-weight: bold;
 }
