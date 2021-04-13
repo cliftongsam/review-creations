@@ -15,7 +15,8 @@ if (isset($_REQUEST['username'])) {
     $password = stripslashes($_REQUEST['password']);
     $password = mysqli_real_escape_string($conn, $password);
     $create_datetime = date("Y-m-d H:i:s");
-    $query    = "INSERT VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
+    $query    = "INSERT into `users` (username, password, email, create_datetime)
+                     VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
     $result   = mysqli_query($conn, $query);
     if ($result) {
         echo "<div class='form'>
@@ -25,7 +26,7 @@ if (isset($_REQUEST['username'])) {
     } else {
         echo "<div class='form'>
                   <h3>Required fields are missing.</h3><br/>
-                  <p class='link'>Click here to <a href='Sign%20up.php'> Register again.</p>
+                  <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
                   </div>";
     }
 } else {
@@ -33,8 +34,8 @@ if (isset($_REQUEST['username'])) {
     <form class="form" action="" method="post">
         <h1 class="login-title">Registration</h1>
         <input type="text" class="login-input" name="username" placeholder="Username" required />
-        <input type="text" class="login-input" name="email" placeholder="Email Address">
-        <input type="password" class="login-input" name="password" placeholder="Password">
+        <input type="text" class="login-input" name="email" placeholder="Email Address" required>
+        <input type="password" class="login-input" name="password" placeholder="Password" required>
         <input type="submit" name="submit" value="Register" class="login-button">
         <p class="link"><a href="Login.php">Click to Login</a></p>
     </form>
