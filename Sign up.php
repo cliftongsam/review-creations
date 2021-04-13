@@ -15,8 +15,7 @@ if (isset($_REQUEST['username'])) {
     $password = stripslashes($_REQUEST['password']);
     $password = mysqli_real_escape_string($conn, $password);
     $create_datetime = date("Y-m-d H:i:s");
-    $query    = "INSERT into `users` (username, password, email, create_datetime)
-                     VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
+    $query    = "INSERT VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
     $result   = mysqli_query($conn, $query);
     if ($result) {
         echo "<div class='form'>
@@ -26,7 +25,7 @@ if (isset($_REQUEST['username'])) {
     } else {
         echo "<div class='form'>
                   <h3>Required fields are missing.</h3><br/>
-                  <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
+                  <p class='link'>Click here to <a href='Sign%20up.php'> Register again.</p>
                   </div>";
     }
 } else {
