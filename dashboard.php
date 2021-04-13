@@ -18,7 +18,7 @@ include("auth_session.php");
 </head>
 <body>
 <div class="form">
-    <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
+    <p style="contain: layout">Hey, <?php echo $_SESSION['username']; ?>!</p>
     <p>You are now at the user dashboard page.</p>
 
     <h1>WELCOME TO REVIEW CREATIONS</h1><br><br>

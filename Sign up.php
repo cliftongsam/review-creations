@@ -2,7 +2,7 @@
 <html
 <head>
     <title>Registration</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="styles/styler.css"/>
 </head>
 <body>
 <?php
@@ -33,7 +33,7 @@ if (isset($_REQUEST['username'])) {
     ?>
     <form class="form" action="" method="post">
         <h1 class="login-title">Registration</h1>
-        <input type="text" class="login-input" name="username" placeholder="Username" required />
+        <input type="text" class="text" name="" placeholder="Username" required />
         <input type="text" class="login-input" name="email" placeholder="Email Address">
         <input type="password" class="login-input" name="password" placeholder="Password">
         <input type="submit" name="submit" value="Register" class="login-button">
