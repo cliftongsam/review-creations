@@ -1,5 +1,7 @@
-<h1> WELCOME TO GUEST DASHBOARD</h1>
-<h4>Here, the guest will be able to view limited reviews and cannot submit any reviews.
+<br><br><br>
+<h1><center>WELCOME TO GUEST DASHBOARD</center> </h1>
+<br><br>
+<h4 style="text-align: center">Here, the guest will be able to view limited reviews and cannot submit any reviews.
 Review Creations is a free and reliable website. We hope to see YOU as a user soon.</h4>
 
 <br>

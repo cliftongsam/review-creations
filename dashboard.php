@@ -24,7 +24,7 @@ include("auth_session.php");
     <h1>WELCOME TO REVIEW CREATIONS</h1><br><br>
     <h2> What would you like to do today?</h2><br><br>
     <a href="userchoice2.php">
-        <div style="text-align: center;"><button>HERE</button></div><br><br>
+        <div style="text-align: center;"><button >HERE</button></div><br><br>
     </a>
     <h2> Where have you been?</h2><br><br>
     <a href="userchoice1.php">
