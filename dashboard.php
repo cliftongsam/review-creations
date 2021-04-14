@@ -19,12 +19,12 @@ include("auth_session.php");
 <body>
 <div class="form">
     <p style="contain: layout">Hey, <?php echo $_SESSION['username']; ?>!</p>
-    <p>You are now at the user dashboard page.</p>
+
 
     <h1>WELCOME TO REVIEW CREATIONS</h1><br><br>
     <h2> What would you like to do today?</h2><br><br>
     <a href="userchoice2.php">
-        <div style="text-align: center;"><button>HERE</button></div><br><br>
+        <div style="text-align: center;"><button >HERE</button></div><br><br>
     </a>
     <h2> Where have you been?</h2><br><br>
     <a href="userchoice1.php">
