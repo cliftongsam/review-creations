@@ -4,6 +4,7 @@ include("auth_session.php");
 ?>
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="styles/style.css"/>
 <head>
     <meta charset="utf-8">
     <title>Dashboard</title>

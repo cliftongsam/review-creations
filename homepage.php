@@ -33,7 +33,7 @@
     <input type="submit" ><br><br>
 </form>
 <form action="Sign up.php" method="post" >
-    <h3>SIGN-UP:</h3>
+    <h3 style="color: black">SIGN-UP:</h3>
     <input type="submit" >
 
 </form>

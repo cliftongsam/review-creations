@@ -7,6 +7,7 @@
 <body>
 <?php
 require('db.php');
+session_start();
 if (isset($_REQUEST['username'])) {
     $username = stripslashes($_REQUEST['username']);
     $username = mysqli_real_escape_string($conn, $username);
@@ -17,7 +18,9 @@ if (isset($_REQUEST['username'])) {
     $create_datetime = date("Y-m-d H:i:s");
     $query    = "INSERT into `users` (username, password, email, timestamp )
                      VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
+
     $result   = mysqli_query($conn, $query);
+
     if ($result) {
         echo "<div class='form'>
                   <h3>You are registered successfully.</h3><br/>
