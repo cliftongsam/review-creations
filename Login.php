@@ -8,7 +8,8 @@
 <?php
 require('db.php');
 session_start();
-if (isset($_POST['username'])) {
+if (isset($_POST['username']))
+{
     $username = stripslashes($_REQUEST['username']);
     $username = mysqli_real_escape_string($conn, $username);
     $password = stripslashes($_REQUEST['password']);
@@ -17,7 +18,8 @@ if (isset($_POST['username'])) {
                      AND password='" . md5($password) . "'";
     $result = mysqli_query($conn, $query) or die(mysql_error());
     $rows = mysqli_num_rows($result);
-    if ($rows == 1) {
+    if ($rows == 1)
+    {
         $_SESSION['username'] = $username;
         header("Location: geolocation.php");
     } else {

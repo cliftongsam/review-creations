@@ -25,15 +25,16 @@
     </style>
 
 <body >
+
 <h1>HOMEPAGE</h1>
 <h2 style=": white"> LOG IN</h2>
 
-<form action="login.php" method="post">
-    <input type="submit"><br><br>
+<form action="login.php" method="post" >
+    <input type="submit" ><br><br>
 </form>
-<form action="Sign up.php" method="post">
+<form action="Sign up.php" method="post" >
     <h3>SIGN-UP:</h3>
-    <input type="submit">
+    <input type="submit" >
 
 </form>
 

@@ -9,7 +9,6 @@
 <?php
 require('db.php');
 session_start();
-var_dump($_REQUEST);
 if (isset($_REQUEST['reviews'])) {
     $username=$_SESSION['username'];
     $place = ($_POST['place']);
@@ -30,12 +29,15 @@ if (isset($_REQUEST['reviews'])) {
 
 }else {
     ?>
+    <br><br><br><center><h1>
         <?php
     $username  = $_SESSION['username'];
     echo "WELCOME $username";
     ?>
-    <h1>Review submission</h1><br>
-    <form  class= "form" action="" method="post">
+        </h1></center>
+    <br><br><br><br><br>
+    <center><h2>Submit your Review Here:</h2><br></center>
+    <center><form  class= "form" action="" method="post">
         Place you visited:
             <input type = "text" class="form" name="place" placeholder="Visited" required >
         <br>Describe your experience :<br>
@@ -44,7 +46,7 @@ if (isset($_REQUEST['reviews'])) {
         <br>
         <input <button type="submit" name="submit" value="SUBMIT"</button>
         <p class="link"><a href="dashboard.php">Click to dashboard</a></p>
-    </form>
+    </form></center>
     <?php
 }
 ?>
