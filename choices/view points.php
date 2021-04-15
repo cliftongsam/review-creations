@@ -27,33 +27,35 @@
 <body >
 
 <h1>VIEW POINTS</h1>
-<h2 style=": white"> </h2>
-<a href="rest/caribou.php">
+<h2 style=": white">Thunder Bay Lookout </h2>
+<a href="view/thunlook.php">
     <div style="text-align: center;"><button >HERE</button></div><br><br>
 </a>
 
-<h2>MONGOS GRILL:</h2>
-<a href="rest/mongosgrill.php">
+<h2>Mount McKay Scenic Lookout</h2>
+<a href="view/mckay.php">
     <div style="text-align: center;"><button >HERE</button></div><br><br>
 </a>
 </form>
 
-<h2>MONTANAS:</h2>
-<a href="rest/montanas.php">
+<h2>Hillcrest Park</h2>
+<a href="view/hillcrest.php">
     <div style="text-align: center;"><button >HERE</button></div><br><br>
 </a>
 
-<h2>NOOK:</h2>
-<a href="rest/Nook.php">
+<h2>George Burke Park</h2>
+<a href="view/burke.php">
     <div style="text-align: center;"><button >HERE</button></div><br><br>
 </a>
 
-<h2>TONY ROMAS:</h2>
-<a href="rest/tony%20romas.php">
+<h2>Sea Lion Rock Formation</h2>
+<a href="view/sealion.php">
     <div style="text-align: center;"><button >HERE</button></div><br><br>
 </a>
 
 </body>
+<br><br><br><br><br><br><br><br>
+<p><a href="../../dashboard.php">Dashboard</a></p>
 </html>
 
 

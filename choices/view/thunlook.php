@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>review</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="styler/style.css" type="text/css" />
 </head>
 <body>
 <center><H1> REVIEWS</H1></center>
@@ -15,9 +15,9 @@
             <td>reviews</td>
         </tr>
         <?php
-        include 'hdatabase.php';
+        include 'vdatabase.php';
         session_start();
-        $sql = "SELECT id,place,rev from hotel_reviews WHERE place= 'Valhalla Inn Hotel'";
+        $sql = "SELECT id,place,rev from viewpoint_reviews WHERE place= 'Thunder Bay Lookout'";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {

@@ -37,4 +37,6 @@
 
 </div>
 </body>
+<br><br><br><br><br><br><br><br>
+<p><a href="../../dashboard.php">Dashboard</a></p>
 </html>
