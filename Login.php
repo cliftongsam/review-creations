@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="styles/styler.css"/>
 </head>
 <body style="background-color: #fcfbfb">
 <?php
