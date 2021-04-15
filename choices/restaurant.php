@@ -49,7 +49,7 @@
 </a>
 
 <h2>TONY ROMAS:</h2>
-<a href="rest/tony%20romas.php.php">
+<a href="rest/tony%20romas.php">
     <div style="text-align: center;"><button >HERE</button></div><br><br>
 </a>
 

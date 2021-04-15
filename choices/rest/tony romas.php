@@ -1,33 +1,39 @@
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <title>restaurant reviews</title>
-    <link rel="stylesheet" href="../styles/style.css" type="text/css" />
+    <title>review</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
+<center><H1> REVIEWS</H1></center>
 <div id="body">
     <table width="80%" border="1">
         <tr>
+            <td>id</td>
             <td>place</td>
             <td>reviews</td>
         </tr>
         <?php
-        include 'db.php';
+        include 'rdatabase.php';
         session_start();
-        $sql = "SELECT place,rev FROM rest_reviews WHERE place='Tony Romas' ";
+        $sql = "SELECT id,place,rev from rest_reviews WHERE place= 'Tony Romas'";
         $result = $conn->query($sql);
-        var_dump($sql);
-        var_dump($result);
 
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                echo " " . $row["place"]." " . $row["reviews"]. "<br>";
+                ?>
+                <tr>
+                    <td><?php echo $row['id'] ?></td>
+                    <td><?php echo $row['place'] ?></td>
+                    <td><?php echo $row['rev'] ?></td>
+                </tr>
+                <?php
             }
-        } else {
-            echo "0 results";
         }
-       ?>
+        ?>
+    </table>
 
 </div>
 </body>
