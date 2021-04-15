@@ -18,8 +18,7 @@ if (isset($_REQUEST['reviews'])) {
 
     $query = "INSERT into `posts` VALUES (NULL ,'$username', '$place', '$reviews')";
     $result = mysqli_query($conn, $query);
-    var_dump($result);
-    if ($result== TRUE) {
+    if ($result) {
         echo "<div class='form'>
                   <h3>Thank you for the submission.</h3><br/>
                   <p class='link'>Click here to <a href='display-star-rating.php'>rate</a></p>
