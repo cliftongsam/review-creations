@@ -19,7 +19,7 @@ if (isset($_POST['username'])) {
     $rows = mysqli_num_rows($result);
     if ($rows == 1) {
         $_SESSION['username'] = $username;
-        header("Location: dashboard.php");
+        header("Location: geolocation.php");
     } else {
         echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>

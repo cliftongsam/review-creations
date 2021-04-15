@@ -38,10 +38,7 @@
     to visit or have dinner just
     by looking at the suggestions or reviews provided by anyone. </p>
 <center>
-    <h3> Location access</h3>
-    <a href="geolocation.php">
-        <button>HERE</button>
-    </a>
+
     <h3> For login or as Guest</h3>
     <a href="homepage.php">
         <button>HERE</button>

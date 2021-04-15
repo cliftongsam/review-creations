@@ -67,30 +67,21 @@
         $username = $_SESSION['username'];
         var_dump($username);
         $query = "SELECT * FROM posts,users WHERE posts.user_name= users.username and posts.user_name= '$username'";
-        var_dump($query);
         $result = mysqli_query($conn,$query);
-        var_dump($result);
         while($row = mysqli_fetch_array($result)){
             $post_id = $row['id'];
             $place = $row['place'];
             $reviews = $row['reviews'];
 
 // User rating
-            $query = "SELECT * FROM post_rating WHERE post_id=".$post_id." and user_id=".$user_id;
+            $query = "SELECT * FROM post_rating WHERE post_id=.$post_id. and user_id=.$user_id";
             $userresult = mysqli_query($conn,$query) or die(mysqli_error());
             $fetchRating = mysqli_fetch_array($userresult);
             $rating = $fetchRating['rating'];
-// get average
-            $query = "SELECT ROUND(AVG(rating),1) as averageRating FROM post_rating WHERE post_id=".$post_id;
-            $avgresult = mysqli_query($conn,$query) or die(mysqli_error());
-            $fetchAverage = mysqli_fetch_array($avgresult);
-            $averageRating = $fetchAverage['averageRating'];
-            if($averageRating <= 0){
-                $averageRating = "No rating yet.";
-            }
+
             ?>
             <div class="post">
-                <h1><a href='<?php echo $link; ?>' class='link' target='_blank'><?php echo $place; ?></a></h1>
+                <h1><?php echo $place; ?></a></h1>
                 <div class="post-text">
                     <?php echo $reviews; ?>
                 </div>
@@ -104,9 +95,7 @@
                         <option value="5" >5</option>
                     </select>
                     <div style='clear: both;'></div>
-                    Average Rating : <span id='avgrating_<?php echo $post_id; ?>'><?php echo $averageRating; ?></span>
-                    <br>
-                    <a href="dashboard.php" <button> Here</button> </a> for dashboard
+
                     <!-- Set rating -->
                     <script type='text/javascript'>
                         $(document).ready(function(){
@@ -115,6 +104,8 @@
                     </script>
                 </div>
             </div>
+            <br>
+            <a href="dashboard.php" <button> Here</button> </a> for dashboard
             <?php
         }
         ?>
@@ -140,9 +131,7 @@
                         dataType: 'json',
                         success: function(data){
 // Update average
-                            var average = data['averageRating'];
-                            $('#avgrating_'+post_id).text(average);
-                        }
+
                     });
                 }
             }
