@@ -40,7 +40,7 @@
 
 <h2 style=>GUEST</h2>
 
-<form action="GuestDashboard.php" method="post">
+<form action="GuestDashboard.php" method="post" style="color: black">
     Name: <input type="Text" name="name"><br><br>
     <input type="submit">
 </form>
