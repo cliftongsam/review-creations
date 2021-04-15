@@ -30,7 +30,7 @@
 <h2 style=": white"> LOG IN</h2>
 
 <form action="login.php" method="post" >
-    <input type="submit" ><br><br>
+    <input type="submit" value="login"><br>
 </form>
 <form action="Sign up.php" method="post" >
     <h3 style="color: black">SIGN-UP:</h3>
@@ -40,7 +40,7 @@
 
 <h2 style=>GUEST</h2>
 
-<form action="GuestDashboard.php" method="post" style="color: black">
+<form action="GuestDashboard.php" method="post">
     Name: <input type="Text" name="name"><br><br>
     <input type="submit">
 </form>

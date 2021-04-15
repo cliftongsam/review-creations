@@ -8,7 +8,7 @@
         {
             if(navigator.geolocation)
             {
-                navigator.geolocation.getCurrentPosition(function(position)
+            navigator.geolocation.getCurrentPosition(function(position)
                 {
                     const positionInfo= "Your current position is - <br>" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + " ,<br> THUNDER BAY";
                     document.getElementById("result").innerHTML = positionInfo;
@@ -25,12 +25,10 @@
 <div id="result">
     <!--Position information will be inserted here-->
 </div>
-<button type="button" onclick="showPosition();">Show Position</button>
+<center><button type="button" onclick="showPosition();">Position</button></center>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
-
-
 <form action="dashboard.php" method="post">
     <input type="submit" value="Dashboard">
 
