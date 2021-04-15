@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="../../styles/style.css"/>
     <title>review</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+
 </head>
 <body>
 <center><H1> REVIEWS</H1></center>
